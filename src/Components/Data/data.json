@@ -1,0 +1,180 @@
+{
+  "myBookData": [
+    {
+      "id": 1,
+      "title": "Being Boss",
+      "author": "Kathleen Shannon and Emily",
+      "image": "/images/1.png",
+      "minutes": "13-minute read",
+      "addToLib": true,
+      "isFinished": true,
+      "type": {
+        "trending": true,
+        "justAdded": false,
+        "featured": false
+      },
+      "readAgain": true
+    },
+    {
+      "id": 2,
+      "title": "Beyond Entrepreneurship",
+      "author": "Jim Collins & Bill Lazier",
+      "image": "/images/2.png",
+      "minutes": "13-minute read",
+      "reads": "1.9k reads",
+      "addToLib": true,
+      "isFinished": false,
+      "type": {
+        "trending": true,
+        "justAdded": false,
+        "featured": false
+      },
+      "readAgain": true
+    },
+    {
+      "id": 3,
+      "title": "Employee to Entrepreneur",
+      "author": "Steve Glaveski",
+      "image": "/images/3.png",
+      "minutes": "14-minute read",
+      "reads": "1.9k reads",
+      "addToLib": true,
+      "isFinished": false,
+      "type": {
+        "trending": true,
+        "justAdded": false,
+        "featured": false
+      }
+    },
+    {
+      "id": 4,
+      "title": "The Fate of Food",
+      "author": "Amanda Little",
+      "image": "/images/4.png",
+      "minutes": "12-minute read",
+      "reads": "16k reads",
+      "addToLib": false,
+      "isFinished": false,
+      "type": {
+        "trending": true,
+        "justAdded": false,
+        "featured": false
+      }
+    },
+    {
+      "id": 5,
+      "title": "Lives of the Stoics",
+      "author": "Ryan Holiday, Stephen Hansel",
+      "image": "/images/5.png",
+      "minutes": "13-minute read",
+      "addToLib": true,
+      "isFinished": false,
+      "type": {
+        "trending": true,
+        "justAdded": false,
+        "featured": false
+      }
+    },
+    {
+      "id": 6,
+      "title": "Loving Your Business",
+      "author": "Debble King",
+      "image": "/images/6.png",
+      "minutes": "13-minute read",
+      "addToLib": false,
+      "isFinished": false,
+      "type": {
+        "trending": true,
+        "justAdded": false,
+        "featured": false
+      }
+    },
+    {
+      "id": 7,
+      "title": "The Lonely Century",
+      "author": "Noreena Hertz",
+      "image": "/images/7.png",
+      "minutes": "15-minute read",
+      "addToLib": true,
+      "isFinished": false,
+      "type": {
+        "trending": false,
+        "justAdded": true,
+        "featured": false
+      }
+    },
+    {
+      "id": 8,
+      "title": "Eat Better, Feel Better",
+      "author": "Giada De Laurentiis",
+      "image": "/images/8.png",
+      "minutes": "13-minute read",
+      "reads": "1.9k reads",
+      "addToLib": true,
+      "isFinished": false,
+      "type": {
+        "trending": false,
+        "justAdded": true,
+        "featured": false
+      }
+    },
+    {
+      "id": 9,
+      "title": "Dropshipping",
+      "author": "James Moore",
+      "image": "/images/9.png",
+      "minutes": "12-minute read",
+      "addToLib": true,
+      "isFinished": false,
+      "type": {
+        "trending": false,
+        "justAdded": true,
+        "featured": false
+      }
+    },
+    {
+      "id": 10,
+      "title": "Being Boss",
+      "author": "Kathleen Shannon and Emily",
+      "image": "/images/1.png",
+      "minutes": "13-minute read",
+      "addToLib": false,
+      "isFinished": false,
+      "type": {
+        "trending": true,
+        "justAdded": false,
+        "featured": false
+      },
+      "readAgain": true
+    },
+    {
+      "id": 11,
+      "title": "Beyond Entrepreneurship",
+      "author": "Jim Collins & Bill Lazier",
+      "image": "/images/2.png",
+      "minutes": "13-minute read",
+      "reads": "1.9k reads",
+      "addToLib": true,
+      "isFinished": false,
+      "type": {
+        "trending": true,
+        "justAdded": false,
+        "featured": false
+      }
+    },
+    {
+      "id": 12,
+      "title": "Doesn't Hurt to Ask",
+      "author": "Trey Gowdy",
+      "image": "/images/3.png",
+      "minutes": "13-minute read",
+      "addToLib": true,
+      "isFinished": false,
+      "type": {
+        "trending": false,
+        "justAdded": false,
+        "featured": true
+      }
+    }
+  ]
+}
