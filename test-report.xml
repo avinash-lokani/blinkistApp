@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Atoms/Logo/Index.test.tsx">
-    <testCase name="should render logo" duration="74"/>
+    <testCase name="should render logo" duration="51"/>
   </file>
   <file path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Atoms/Icons/Index.test.tsx">
-    <testCase name="should render downArrow Icon" duration="129"/>
-    <testCase name="should render searchIcon Icon" duration="33"/>
+    <testCase name="should render downArrow Icon" duration="122"/>
+    <testCase name="should render searchIcon Icon" duration="27"/>
   </file>
   <file path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Molecules/Banner/Index.test.tsx">
-    <testCase name="Banner Banner display" duration="88"/>
+    <testCase name="Banner Banner display" duration="114"/>
   </file>
 </testExecutions>
