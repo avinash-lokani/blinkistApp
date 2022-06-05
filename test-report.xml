@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Atoms/Icons/Index.test.tsx">
-    <testCase name="should render downArrow Icon" duration="150"/>
-    <testCase name="should render searchIcon Icon" duration="55"/>
-  </file>
-  <file path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Atoms/Logo/Index.test.tsx">
-    <testCase name="should render logo" duration="43"/>
+    <testCase name="should render downArrow Icon" duration="156"/>
+    <testCase name="should render searchIcon Icon" duration="54"/>
   </file>
   <file path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Molecules/IconButtons/Index.test.tsx">
-    <testCase name="Icon with button tests Add icon with button" duration="104"/>
+    <testCase name="Icon with button tests Add icon with button" duration="109"/>
   </file>
   <file path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Molecules/Banner/Index.test.tsx">
-    <testCase name="Banner Banner display" duration="110"/>
+    <testCase name="Banner Banner display" duration="148"/>
   </file>
   <file path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Molecules/Button/Index.test.tsx">
-    <testCase name="Button Buttons" duration="207"/>
-    <testCase name="Button Icon Button" duration="82"/>
+    <testCase name="Button Buttons" duration="212"/>
+    <testCase name="Button Icon Button" duration="123"/>
+  </file>
+  <file path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Atoms/Logo/Index.test.tsx">
+    <testCase name="should render logo" duration="31"/>
   </file>
   <file path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Molecules/DropDown/Index.test.tsx">
-    <testCase name="DropDown DropDown Explore" duration="109"/>
-    <testCase name="DropDown Account dropdown" duration="25"/>
+    <testCase name="DropDown DropDown Explore" duration="67"/>
+    <testCase name="DropDown Account dropdown" duration="13"/>
   </file>
 </testExecutions>
