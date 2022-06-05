@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1654307488705" clover="3.2.0">
-  <project timestamp="1654307488705" name="All files">
-    <metrics statements="422" coveredstatements="44" conditionals="64" coveredconditionals="0" methods="101" coveredmethods="3" elements="587" coveredelements="47" complexity="0" loc="422" ncloc="422" packages="29" files="57" classes="57"/>
+<coverage generated="1654394256505" clover="3.2.0">
+  <project timestamp="1654394256505" name="All files">
+    <metrics statements="422" coveredstatements="57" conditionals="64" coveredconditionals="2" methods="101" coveredmethods="6" elements="587" coveredelements="65" complexity="0" loc="422" ncloc="422" packages="29" files="57" classes="57"/>
     <package name="src">
       <metrics statements="47" coveredstatements="30" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="App.tsx" path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/App.tsx">
@@ -15,36 +15,36 @@
       </file>
       <file name="Icons.tsx" path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Icons.tsx">
         <metrics statements="30" coveredstatements="30" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-        <line num="52" count="1" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
-        <line num="65" count="1" type="stmt"/>
-        <line num="70" count="1" type="stmt"/>
-        <line num="78" count="1" type="stmt"/>
-        <line num="85" count="1" type="stmt"/>
-        <line num="93" count="1" type="stmt"/>
-        <line num="100" count="1" type="stmt"/>
-        <line num="108" count="1" type="stmt"/>
-        <line num="115" count="1" type="stmt"/>
-        <line num="123" count="1" type="stmt"/>
-        <line num="130" count="1" type="stmt"/>
-        <line num="138" count="1" type="stmt"/>
-        <line num="145" count="1" type="stmt"/>
-        <line num="153" count="1" type="stmt"/>
-        <line num="161" count="1" type="stmt"/>
-        <line num="169" count="1" type="stmt"/>
-        <line num="176" count="1" type="stmt"/>
-        <line num="184" count="1" type="stmt"/>
-        <line num="191" count="1" type="stmt"/>
-        <line num="199" count="1" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
+        <line num="52" count="4" type="stmt"/>
+        <line num="60" count="4" type="stmt"/>
+        <line num="65" count="4" type="stmt"/>
+        <line num="70" count="4" type="stmt"/>
+        <line num="78" count="4" type="stmt"/>
+        <line num="85" count="4" type="stmt"/>
+        <line num="93" count="4" type="stmt"/>
+        <line num="100" count="4" type="stmt"/>
+        <line num="108" count="4" type="stmt"/>
+        <line num="115" count="4" type="stmt"/>
+        <line num="123" count="4" type="stmt"/>
+        <line num="130" count="4" type="stmt"/>
+        <line num="138" count="4" type="stmt"/>
+        <line num="145" count="4" type="stmt"/>
+        <line num="153" count="4" type="stmt"/>
+        <line num="161" count="4" type="stmt"/>
+        <line num="169" count="4" type="stmt"/>
+        <line num="176" count="4" type="stmt"/>
+        <line num="184" count="4" type="stmt"/>
+        <line num="191" count="4" type="stmt"/>
+        <line num="199" count="4" type="stmt"/>
       </file>
       <file name="index.tsx" path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/index.tsx">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -79,8 +79,8 @@
       </file>
       <file name="Icons.tsx" path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Atoms/Icons/Icons.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
       </file>
     </package>
     <package name="src.Components.Atoms.Logo">
@@ -135,7 +135,7 @@
       </file>
     </package>
     <package name="src.Components.Molecules.Button">
-      <metrics statements="16" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <metrics statements="16" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
       <file name="Button.stories.tsx" path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Molecules/Button/Button.stories.tsx">
         <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="6" count="0" type="stmt"/>
@@ -152,15 +152,15 @@
         <line num="47" count="0" type="stmt"/>
       </file>
       <file name="Button.tsx" path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Molecules/Button/Button.tsx">
-        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="61" count="2" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.Components.Molecules.DropDown">
-      <metrics statements="10" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <metrics statements="10" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
       <file name="Index.stories.tsx" path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Molecules/DropDown/Index.stories.tsx">
         <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="9" count="0" type="stmt"/>
@@ -171,15 +171,15 @@
         <line num="19" count="0" type="stmt"/>
       </file>
       <file name="Index.tsx" path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Molecules/DropDown/Index.tsx">
-        <metrics statements="4" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.Components.Molecules.IconButtons">
-      <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <metrics statements="10" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
       <file name="Index.stories.tsx" path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Molecules/IconButtons/Index.stories.tsx">
         <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="12" count="0" type="stmt"/>
@@ -190,11 +190,11 @@
         <line num="27" count="0" type="stmt"/>
       </file>
       <file name="Index.tsx" path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Molecules/IconButtons/Index.tsx">
-        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.Components.Molecules.Lists">
@@ -627,10 +627,10 @@
       </file>
     </package>
     <package name="src.Components.Theme">
-      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="Theme.tsx" path="/home/avinL/Desktop/frontend/react-app/react-demo-app/src/Components/Theme/Theme.tsx">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="0" type="stmt"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.Pages.BookDetailView">
