@@ -9,6 +9,13 @@ import {
   
 
   const theme = createTheme({
+
+    palette : {
+      action : {
+        disabled : "#00000042",
+      }
+    },
+
     components:{
       MuiTypography: {
           styleOverrides: {

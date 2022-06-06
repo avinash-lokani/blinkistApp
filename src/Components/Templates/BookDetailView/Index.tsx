@@ -9,17 +9,21 @@ interface Props {
 }
 
 const useStyles = makeStyles({
+  main : {
+    height : "100%"
+  },
   footer : {
+    marginTop : "auto",
     height:"370px",
-    position:"relative",
-    bottom : "0",
+    position:"sticky",
     alignItems : "center",
     width : "100%"
   },
   body :{
-    minHeight: "100vh",
+    
     display : "flex",
-    flexDirection : "column"
+    flexDirection : "column",
+    minHeight : "100vh"
   }
 })
 
@@ -30,15 +34,16 @@ const BookDetailView = (props: Props) => {
   return (
     <>
 
-    <Container>
+    <div className = {classes.main}>
       <Container>{props.header}</Container>
         <Container style={{marginTop: "150px"}} className = {classes.body}>
             {props.bookDetailOrg}
         </Container>
         
-    </Container>
+    
+    
+    </div>
     <div className={classes.footer}>{props.footer}</div>
-      
     </>
   );
 };

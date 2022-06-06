@@ -152,7 +152,7 @@ const BookDetails = () => {
               ></Time>
             </Typography>
             <Box>
-              <ButtonGroup num={10} disabled = {!bookData.isFinished}></ButtonGroup>
+              <ButtonGroup num={10} disabled = {!bookData.isFinished} ></ButtonGroup>
             </Box>
             <Box>
               <BookDetailTab

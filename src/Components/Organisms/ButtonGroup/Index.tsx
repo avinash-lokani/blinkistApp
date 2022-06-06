@@ -32,7 +32,7 @@ const useStyles = makeStyles({
       },
     },
     finishedReading: {
-      color: "#03314B !important",
+       color: "#03314B !important",
       textAlign: "center",
       width: "170px",
       height: "44px",
@@ -119,6 +119,7 @@ const ButtonGroup = (props: Props) => {
           className={classes.readNow}
           onClick={() => handleRead(props.num)}
           disabled = {props.disabled}
+          
         >
           Read now
         </Buttons>
@@ -127,6 +128,7 @@ const ButtonGroup = (props: Props) => {
           onClick={() => handleFinished(props.num)}
           className={classes.finishedReading}
           disabled = {!props.disabled}
+          style = {!props.disabled ?  { background : '#000000 !important' } : {  background : '#2CE080 !important'}}
         >
           Finished Reading
         </Buttons>

@@ -23,7 +23,7 @@
       "minutes": "13-minute read",
       "reads": "1.9k reads",
       "addToLib": true,
-      "isFinished": false,
+      "isFinished": true,
       "type": {
         "trending": true,
         "justAdded": false,
@@ -54,12 +54,13 @@
       "minutes": "12-minute read",
       "reads": "16k reads",
       "addToLib": false,
-      "isFinished": false,
+      "isFinished": true,
       "type": {
         "trending": true,
         "justAdded": false,
         "featured": false
-      }
+      },
+      "readAgain": true
     },
     {
       "id": 5,
@@ -134,9 +135,9 @@
     },
     {
       "id": 10,
-      "title": "Being Boss",
-      "author": "Kathleen Shannon and Emily",
-      "image": "/images/1.png",
+      "title": "Lives of the Stoics",
+      "author": "Ryan Holiday, Stephen Hansel",
+      "image": "/images/5.png",
       "minutes": "13-minute read",
       "addToLib": false,
       "isFinished": false,
@@ -144,8 +145,7 @@
         "trending": true,
         "justAdded": false,
         "featured": false
-      },
-      "readAgain": true
+      }
     },
     {
       "id": 11,
