@@ -6,7 +6,7 @@
     "image": "/images/1.png",
     "minutes": "13-minute read",
     "addToLib": true,
-    "isFinished": false,
+    "isFinished": true,
     "type": {
       "trending": true,
       "justAdded": false,
