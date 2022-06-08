@@ -1,10 +1,10 @@
 import React from "react";
-import { DownArrowIcon } from "../../../Icons";
-import { ReactComponent as Account } from "../../../images/Svg/account.svg";
+import { DownArrowIcon } from "Icons";
+import { ReactComponent as Account } from "images/Svg/account.svg";
 import { makeStyles } from "@mui/styles";
 import { Box, ThemeProvider, Typography } from "@mui/material";
-import Icons from "../../Atoms/Icons/Icons";
-import theme from "../../Theme/Theme";
+import Icons from "Components/Atoms/Icons/Icons";
+import theme from "Components/Theme/Theme";
 interface Props {
   title: string;
   className?: string;
@@ -62,7 +62,7 @@ const Dropdown = (props: Props) => {
             className={classes.colorStyle}
           >
             <DownArrowIcon
-              sx={{ top: "11px", left: "3px", position: "relative" }}
+              sx={{ top: "15px", left: "3px", position: "relative" }}
             />
           </Icons>
         </Box>

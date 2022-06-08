@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import BookDetailView from "../src/Pages/BookDetailView/Index"
 import EntrepreneurshipPage from "../src/Pages/Entrepreneurship/Index"
 import MyLibrary from "../src/Pages/MyLibrary/Index"
-import LogOutButton from './Components/Organisms/LogOutButton/Index';
+import LogOutButton from './Components/Organisms/LogoutButton/Index';
 import LoginPage from './Pages/Login/Index';
 import { useAuth0 } from '@auth0/auth0-react';
 

@@ -1,19 +1,20 @@
 import { Container, createTheme, ThemeProvider, Typography, Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import IconButtons from "../../Molecules/IconButtons/Index";
-import expandedNavItems from "../../Data/NavData";
+import IconButtons from "Components/Molecules/IconButtons/Index";
+import expandedNavItems from "Components/Data/NavData";
 import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles({
-    divContainer: {
+    mainCont: {
       boxSizing: "border-box",
-      height: "398px",
-      background: "#F1F6F4",
       color: "#6D787E",
       zIndex: "10",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
+      height: "398px",
+      background: "#F1F6F4",
+      
       width: "100%",
       position: "absolute",
       top: "86px",
@@ -21,18 +22,20 @@ const useStyles = makeStyles({
     },
     subContainers: {
       display: "flex !important",
-      flexDirection: "row",
       justifyContent: "space-evenly",
       marginTop: "10px",
-      width: "990px !important"
+      width: "990px !important",
+      flexDirection: "row",
+      
     },
     BoxContainer: {
       display: "flex",
       flexDirection: "row",
+     
+      padding: "37px 0px 25px 40px",
       justifyContent: "initial",
       width: "900px",
       gap: "200px",
-      padding: "37px 0px 25px 40px",
       borderBottom: "1px solid #042330",
     },
     iconStyle: {
@@ -41,18 +44,17 @@ const useStyles = makeStyles({
       height: "22.05px",
     },
     textStyle: {
-      fontStyle: "normal",
-      fontWeight: "400",
       fontSize: "16px",
       lineHeight: "20.11px",
       color: "#6D787E",
+      fontStyle: "normal",
+      fontWeight: "400",
+     
       marginLeft: "6px",
     },
     headingStyle: {
       color: "#6D787E",
-      fontWeight: "500",
-      lineHeight: "20px",
-      fontSize: "16px",
+      
       cursor: "pointer",
       "&:hover": {
         color: "#116BE9",
@@ -63,6 +65,9 @@ const useStyles = makeStyles({
       "&:active": {
         color: "#116BE9",
       },
+      fontWeight: "500",
+      lineHeight: "20px",
+      fontSize: "16px",
     },
 });
 
@@ -71,15 +76,17 @@ const theme = createTheme({
       MuiTypography: {
         styleOverrides: {
           root: {
-            fontFamily: "Cera Pro",
-            fontWeight: "400",
             fontSize: "16px",
             lineHeight: "20.11px",
+            fontFamily: "Cera Pro",
+            fontWeight: "400",
+           
           },
           body1: {
+            fontSize: "16px",
             fontFamily: "Cera Pro",
             fontWeight: "700",
-            fontSize: "16px",
+            
             lineHeight: "20.11px",
           }
         }
@@ -100,7 +107,7 @@ const ExpandedNav = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <div className={classes.divContainer}>
+            <div className={classes.mainCont}>
                 <Box className={classes.BoxContainer}>
                 <Typography variant="body1" sx={{color: "#116BE9"}} className={classes.headingStyle}>
                     Explore by category

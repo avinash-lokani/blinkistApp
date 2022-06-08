@@ -2,6 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 import BookDetail from './Index'
 import cardIm from "../../../../public/images/2.png";
+import { BrowserRouter } from 'react-router-dom';
 
 export default{
     title: "Organism/BookDetail",
@@ -9,7 +10,7 @@ export default{
 } as ComponentMeta<typeof BookDetail>;
 
 const Template: ComponentStory<typeof BookDetail> = () => (
-    <BookDetail/>
+   <BrowserRouter><BookDetail/></BrowserRouter> 
 );
 
 export const BookStory = Template.bind({});

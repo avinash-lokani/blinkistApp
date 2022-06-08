@@ -3,6 +3,7 @@ import Header from "../../Organisms/Header/Index";
 import Footer from "../../Organisms/Footer/Index";
 import BookDetailView from "./Index";
 import BookDetail from "../../Organisms/BookDetails/Index";
+import { BrowserRouter } from "react-router-dom";
 
 export default {
   title: "Templates/BookDetailView",
@@ -10,7 +11,7 @@ export default {
 } as ComponentMeta<typeof BookDetailView>;
 
 const Template: ComponentStory<typeof BookDetailView> = (args) => (
-  <BookDetailView {...args} />
+  <BrowserRouter><BookDetailView {...args} /></BrowserRouter>
 );
 
 export const ViewBookDetails = Template.bind({});

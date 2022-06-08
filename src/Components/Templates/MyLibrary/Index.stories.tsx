@@ -3,6 +3,7 @@ import MyLibrary from './Index';
 import Header from '../../Organisms/Header/Index';
 import Footer from '../../Organisms/Footer/Index';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { BrowserRouter } from 'react-router-dom';
 
 export default{
     title: "Templates/MyLibrary",
@@ -10,7 +11,7 @@ export default{
 } as ComponentMeta<typeof MyLibrary>;
 
 const Template : ComponentStory<typeof MyLibrary> = (args) => (
-    <MyLibrary {...args}/>
+    <BrowserRouter> <MyLibrary {...args}/> </BrowserRouter> 
 );
 
 export const LibraryTemplate = Template.bind({});

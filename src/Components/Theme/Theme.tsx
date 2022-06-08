@@ -9,61 +9,68 @@ const theme = createTheme({
   typography: {
     h1: {
       fontFamily: "Cera Pro",
-      fontWeight: "700",
       fontSize: "36px",
       lineHeight: "45.25px",
       color: "#03314B",
+      fontWeight: "700",
+      
     },
     h3: {
       fontFamily: "Cera Pro",
+      
+      color: "#03314B",
       fontWeight: "700",
       fontSize: "24px",
       lineHeight: "30.17px",
-      color: "#03314B",
     },
     h5:{
       fontFamily: "Cera Pro",
-      fontWeight: "700",
       fontSize: "16px",
       lineHeight: "20.11px",
+      fontWeight: "700",
+      
     },
     body1: {
       fontFamily: "Cera Pro",
-      fontWeight: "500",
       fontSize: "16px",
       lineHeight: "20.11px",
+      fontWeight: "500",
+      
     },
     body2: {
       fontFamily: "inherit",
+      
+      lineHeight: "20.11px",
       fontWeight: "400",
       fontSize: "16px",
-      lineHeight: "20.11px",
       color: "#03314B",
     },
     subtitle2: {
       fontFamily: "Cera Pro",
-      fontWeight: "400",
       fontSize: "18px",
       lineHeight: "22.63px",
       color: "#6D787E",
+      fontWeight: "400",
+      
     },
     subtitle1: {
       fontFamily: "Cera Pro",
       fontWeight: "700",
-      fontSize: "18px",
       lineHeight: "22.63px",
       color: "#03314B",
+      fontSize: "18px",
+    
     },
     caption: {
       fontFamily: "Cera Pro",
-      fontWeight: "400",
       fontSize: "14px",
       lineHeight: "17.6px",
       color: "#6D787E",
+      fontWeight: "400",
+      
     },
     button: {
       textTransform: "none",
-      // background: colors.PRIMARY_BTN,
     }
   },
 
@@ -71,12 +78,12 @@ const theme = createTheme({
     MuiTab: {
       styleOverrides: {
         root: {
-          textTransform: "none",
-          placeItems: "flex-start",
           "&:active" : {
             color:  "#22C870",
             fontWeight: "700",
-          }
+          },
+          textTransform: "none",
+          placeItems: "flex-start",
         }
       }
     }

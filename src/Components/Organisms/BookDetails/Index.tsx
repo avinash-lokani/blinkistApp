@@ -1,15 +1,15 @@
 import { Box, Container, ThemeProvider, Typography } from "@mui/material";
 import { makeStyles, styled } from "@mui/styles";
 import React, { useEffect, useState } from "react";
-import ButtonGroup from "../ButtonGroup/Index";
-import { Time } from "../../Molecules/Reads/Index.stories";
-import { TimeIcon } from "../../../Icons";
-import BookDetailTab from "../BookDetailsTab/Index";
+import ButtonGroup from "Components/Organisms/GroupOfButtons/Index";
+import { Time } from "Components/Molecules/NoOfReads/Index.stories";
+import { TimeIcon } from "Icons";
+import BookDetailTab from "Components/Organisms/BooksTab/Index";
 import axios from "axios";
-import theme from "../../Theme/Theme";
+import theme from "Components/Theme/Theme";
 
 
-const URL = `http://localhost:7000`
+const LINK = `http://localhost:7000`
 
 export type booksData = {
     id: number;
@@ -22,29 +22,30 @@ export type booksData = {
     addToLib: boolean;
     isFinished: boolean;
     readAgain: boolean;
-    type?: {
-      isFinished?: boolean;
-      isReading?: boolean;
-      sendToKindle?: boolean;
-    };
+    type: {
+      trending: boolean,
+      featured: boolean,
+      justAdded: boolean,
+    },
 };
 
 const useStyles = makeStyles({
-    mainHead: {
-      fontStyle: "normal",
-      fontWeight: "700",
-      fontSize: "36px",
-      lineHeight: "45px",
-      color: "#03314B",
-    },
-    subHead: {
+   
+    subHeading: {
       fontStyle: "normal",
       fontWeight: "400",
       fontSize: "16px",
       lineHeight: "20px",
       color: "#03314B",
     },
-    imageStyle: {
+    heading: {
+      fontStyle: "normal",
+      fontWeight: "700",
+      fontSize: "36px",
+      lineHeight: "45px",
+      color: "#03314B",
+    },
+    cardImg: {
       width: "304px",
       height: "304px",
     },
@@ -55,7 +56,7 @@ const useStyles = makeStyles({
       lineHeight: "20px",
       color: "#6D787E",
     },
-    minute: {
+    min: {
       color: "#6D787E",
       lineHeight: "17.6px",
       fontSize: "14px",
@@ -70,25 +71,29 @@ const useStyles = makeStyles({
     },
   });
   
-  const LeftContainer = styled("div")({
+  const Whole = styled("div")({
+    width: "912px",
+    margin: "0 auto",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    
+});
+
+  const LeftSide = styled("div")({
+    gap: "23px",
     boxSizing: "border-box",
     display: "flex",
     flexDirection: "column",
-    gap: "23px",
+    
   });
   
-  const RightContainer = styled("div")({
+  const RightSide = styled("div")({
     display: "flex",
     justifyContent: "flex-end",
   });
   
-  const Wrapper = styled("div")({
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    width: "912px",
-    margin: "0 auto",
-});
+  
 
 const BookDetails = () => {
 
@@ -105,15 +110,15 @@ const BookDetails = () => {
         isFinished: false,
         readAgain: false,
         type: {
-          isFinished: false,
-          isReading: false,
-          sendToKindle: false,
+          trending: false,
+          featured: false,
+          justAdded: false,
         },
     })
 
     useEffect(() => {
         const data = async() => {
-          const res = await axios.get(`${URL}/myBookDetail/`);
+          const res = await axios.get(`${LINK}/BookDetail/`);
           const books = res.data;
           console.log(books);
           
@@ -122,18 +127,20 @@ const BookDetails = () => {
           
         };
           data();
+
+          console.log(bookData.image);
         
-      },[]);
+      },[bookData]);
 
       return (
           <>
-            <Wrapper>
+            <Whole>
         <ThemeProvider theme={theme}>
-          <LeftContainer>
-            <Typography variant="body2" className={classes.subHead}>
+          <LeftSide>
+            <Typography variant="body2" className={classes.subHeading}>
               Get the key ideas from
             </Typography>
-            <Typography variant="h1" className={classes.mainHead}>
+            <Typography variant="h1" className={classes.heading}>
               {bookData.title}
               {/* Beyond Entrepreneurship 2.0 */}
             </Typography>
@@ -147,7 +154,7 @@ const BookDetails = () => {
             <Typography variant="caption">
               <Time
                 startIcon={<TimeIcon />}
-                className={classes.minute}
+                className={classes.min}
                 children={"15-minute read"}
               ></Time>
             </Typography>
@@ -159,20 +166,20 @@ const BookDetails = () => {
                 synopsis={
                   "Beyond Entrepreneurship 2.0 (2020) updates Jim Collins and Bill Lazier’s essential 1992 business handbook, Beyond Entrepreneurship for the entrepreneurs, visionaries, and innovators of today. This new edition combines the timeless business advice and strategy of the original text, supplemented with cutting-edge insights and case studies pertinent to today’s business world."
                 }
-                aboutAuthor={"about the author"}
-                forWhom={"who is it for"}
+                aboutAuthor={"author"}
+                forWhom={""}
               />
             </Box>
-          </LeftContainer>
-          <RightContainer>
+          </LeftSide>
+          <RightSide>
             <img
               src={`${bookData.image}`}
-              className={classes.imageStyle}
+              className={classes.cardImg}
               alt="book cardImg"
             />
-          </RightContainer>
+          </RightSide>
         </ThemeProvider>
-      </Wrapper>
+      </Whole>
           </>
       )
 }

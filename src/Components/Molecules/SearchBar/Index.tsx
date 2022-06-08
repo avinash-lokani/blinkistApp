@@ -1,8 +1,8 @@
 import { makeStyles } from "@mui/styles";
 import React, { useEffect, useState } from "react";
 import { TextField, InputAdornment } from "@mui/material";
-import { SearchIcon } from "../../../Icons";
-import BookData from "../../Data/BooksData";
+import { SearchIcon } from "Icons";
+import BookData from "Components/Data/BooksData";
 
 const useStyles = makeStyles({
   textStyles: {
@@ -19,7 +19,7 @@ const SearchBar = () => {
 
   const classes = useStyles();
   const [count, setCount] = useState(0);
-  const [myBookData, setBookData] = useState([
+  const [bookData, setBookData] = useState([
     {
       id: 1,
       image: "",
@@ -38,18 +38,6 @@ const SearchBar = () => {
     },
   ]);
 
-  const handleChange = async (e: any) => {
-    const val = e.target.value;
-    if (count < 0) {
-      setCount(count + 1);
-    } else {
-      setCount(count - 1);
-    }
-
-    const books = search(val, BookData);
-    setBookData(books);
-    console.log(books);
-  };
 
 
   const search = (val: string, books: any) => {
@@ -65,6 +53,20 @@ const SearchBar = () => {
     return filteredData;
   };
 
+
+  const handleChange = async (e: any) => {
+    const val = e.target.value;
+    if (count < 0) {
+      setCount(count + 1);
+    } else {
+      setCount(count - 1);
+    }
+
+    const books = search(val, BookData);
+    setBookData(books);
+    console.log(books);
+  };
+
   return (
     <div style={{ width: "912px", margin: "58px auto 0px auto" }}>
       <TextField
@@ -76,11 +78,12 @@ const SearchBar = () => {
           style: {
             backgroundColor: "white",
             border: "none",
-            fontSize: "24px",
-            lineHeight: "30.17px",
             fontWeight: "700",
             width: "687px",
             height: "46px",
+            fontSize: "24px",
+            lineHeight: "30.17px",
+            
             paddingBottom: "16px",
             paddingLeft: "0px",
           },
@@ -95,10 +98,11 @@ const SearchBar = () => {
             >
               <SearchIcon
                 sx={{
+                  
+                  marginLeft: "0px",
                   width: "23.7px",
                   height: "23.7px",
                   paddingLeft: "0px",
-                  marginLeft: "0px",
                 }}
               />
             </InputAdornment>

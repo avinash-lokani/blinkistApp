@@ -1,8 +1,7 @@
 import React, { HTMLAttributes, ReactNode } from "react";
 import { Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import { ThemeProvider } from "@emotion/react";
-import theme from "../../Theme/Theme";
+
 
 
 export interface Props extends HTMLAttributes<HTMLButtonElement> {
@@ -33,8 +32,9 @@ export interface Props extends HTMLAttributes<HTMLButtonElement> {
 
 const useStyles = makeStyles({
     iconStyles: {
+      marginTop:"3px",
       width: "14px",
-      height: "14px",
+      height: "16px",
       position: "relative",
       marginRight: "15px",
     },

@@ -1,28 +1,30 @@
 import { makeStyles, styled } from "@mui/styles";
 import { useState } from "react";
-import ExpandedNav from "../ExpandedNav/Index";
+import ExpandedNav from "Components/Organisms/NavExpanded/Index";
 import {
     Container,
     createTheme,
     ThemeProvider,
     Typography,
   } from "@mui/material";
-  import Logo from "../../Atoms/Logo/Index";
-  import Icons from "../../Atoms/Icons/Icons";
-  import Dropdown from "../../Molecules/DropDown/Index";
-  import {SearchIcon} from "../../../Icons";
-  import LogOutButton from "../LogOutButton/Index";
+  import Logo from "Components/Atoms/Logo/Index";
+  import Icons from "Components/Atoms/Icons/Icons";
+  import Dropdown from "Components/Molecules/DropDown/Index";
+  import {useNavigate} from "react-router-dom";
+  import {SearchIcon} from "Icons";
+  import LogOutButton from "Components/Organisms/LogoutButton/Index";
 
   const theme = createTheme({
     components: {
         MuiTypography: {
           styleOverrides: {
             body1: {
+              fontSize: "16px",
+              lineHeight: "20px",
               color: "#03314B",
               fontWeight: "500",
               fontStyle: "normal",
-              fontSize: "16px",
-              lineHeight: "20px",
+              
             },
           },
         },
@@ -71,7 +73,7 @@ import {
       display: "flex !important",
       flexDirection: "row",
       justifyContent: "space-between",
-      // width: "970px !important",
+    
       padding: "0px",
       margin: "0px",
       height: "86px",
@@ -97,6 +99,8 @@ import {
 
   const Header = () => {
 
+    const navigate = useNavigate();
+
     const classes = useStyles();
     const [isExploreClicked, setExploreClicked] = useState<boolean>(false);
     const [iconStyle, setIconStyle] = useState({ transform: "rotate(0deg)" });
@@ -112,7 +116,7 @@ import {
     };
 
     const handleClick = () => {
-        console.log("clicked");
+      navigate("/");
     }
 
     return (

@@ -1,23 +1,32 @@
 import React from "react";
 import { Avatar, Button, Menu, MenuItem, Typography } from "@mui/material";
-import { DownArrowIcon, UpArrowIcon } from "../../../Icons";
+import { DownArrowIcon, UpArrowIcon } from "Icons";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const LogOutButton = () => {
-	const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-	const open = Boolean(anchorEl);
+	const [anchorElement, setAnchorElement] = React.useState<null | HTMLElement>(null);
+
+	const { logout } = useAuth0();
+
+	const open = Boolean(anchorElement);
+
+
+	const handleClose = () => {
+		setAnchorElement(null);
+	};
+
+
 	const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-		if (!anchorEl) {
-			setAnchorEl(event.currentTarget);
+
+
+		if (!anchorElement) {
+			setAnchorElement(event.currentTarget);
 		} else {
 			handleClose();
 		}
 	};
-	const handleClose = () => {
-		setAnchorEl(null);
-	};
+	
 
-	const { logout } = useAuth0();
 
 	return (
 		<div>
@@ -38,7 +47,7 @@ const LogOutButton = () => {
 				>
 					A
 				</Avatar>
-				{anchorEl ? (
+				{anchorElement ? (
 					<UpArrowIcon sx={{ color: "#042330" }} />
 				) : (
 					<DownArrowIcon
@@ -52,18 +61,19 @@ const LogOutButton = () => {
 			</Button>
 			<Menu
 				id="basic-menu"
-				anchorEl={anchorEl}
+				anchorEl={anchorElement}
 				open={open}
 				onClose={handleClose}
 				MenuListProps={{
 					"aria-labelledby": "basic-button",
 				}}
 				sx={{
-					width: "150px",
-					display: "flex",
 					justifyContent: "center",
 					marginTop: "0px",
 					marginLeft: "0px",
+					width: "150px",
+					display: "flex",
+				
 				}}
 				anchorOrigin={{
 					vertical: "bottom",
@@ -76,12 +86,13 @@ const LogOutButton = () => {
 			>
 				<MenuItem
 					sx={{
-						height: "50px",
-						display: "flex",
 						alignItems: "center",
 						padding: "0px",
 						justifyContent: "center",
 						width: "100px",
+						height: "50px",
+						display: "flex",
+						
 					}}
 					onClick={() => logout({ returnTo: window.location.origin })}
 				>

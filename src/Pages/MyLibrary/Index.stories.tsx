@@ -1,5 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom';
 import MyHomePage from './Index'
 
 export default{
@@ -8,7 +9,7 @@ export default{
 } as ComponentMeta<typeof MyHomePage>;
 
 const Template : ComponentStory<typeof MyHomePage> = () => (
-    <MyHomePage/>
+    <BrowserRouter><MyHomePage/></BrowserRouter>
 );
 
 export const HomePage = Template.bind({});

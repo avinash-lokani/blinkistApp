@@ -1,15 +1,15 @@
-import book1 from "../../images/1.png";
-import book2 from "../../images/2.png";
-import book3 from "../../images/3.png";
-import book4 from "../../images/4.png";
-import book5 from "../../images/5.png";
-import book6 from "../../images/6.png";
-import book7 from "../../images/7.png";
-import book8 from "../../images/8.png";
-import book9 from "../../images/9.png";
-import book10 from "../../images/10.png";
-import book11 from "../../images/11.png";
-import book12 from "../../images/11.png";
+import book1 from "images/1.png";
+import book2 from "images/2.png";
+import book3 from "images/3.png";
+import book4 from "images/4.png";
+import book5 from "images/5.png";
+import book6 from "images/6.png";
+import book7 from "images/7.png";
+import book8 from "images/8.png";
+import book9 from "images/9.png";
+import book10 from "images/10.png";
+import book11 from "images/11.png";
+import book12 from "images/11.png";
 
 const BookData = [
   {

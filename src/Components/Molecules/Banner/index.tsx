@@ -5,7 +5,7 @@ import {
   ThemeProvider,
   Typography
 } from "@mui/material";
-import banner from "../../../images/banner.png";
+import banner from "images/banner.png";
 import { styled , makeStyles} from "@mui/styles";
 
 export interface bannerProps {

@@ -60,12 +60,13 @@ import {
     className?: string;
     disabled ?: boolean;
     style?: React.CSSProperties;
+    color ?: string;
   }
   
   
   const Buttons = (props: Props) => {
     
-    const { startIcon, endIcon, variant, children,disabled } = props;
+    const { startIcon, endIcon, variant, children,disabled,style } = props;
     return (
     <ThemeProvider theme={theme}>
       <Typography>
@@ -76,7 +77,7 @@ import {
           startIcon={startIcon}
           endIcon={endIcon}
           className={props.className}
-          style={props.style}
+          style={style}
         >
           {children}
         </Button>

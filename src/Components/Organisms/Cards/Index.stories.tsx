@@ -2,13 +2,14 @@ import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import Cards from "./Index";
 import cardImage from "../../../../public/images/1.png"
+import { BrowserRouter } from "react-router-dom";
 
 export default {
   title: "Organism/Cards",
   children: Cards,
 } as ComponentMeta<typeof Cards>;
 
-const Template: ComponentStory<typeof Cards> = (args) => <Cards {...args} />;
+const Template: ComponentStory<typeof Cards> = (args) => <BrowserRouter><Cards {...args} /></BrowserRouter>;
 
 export const CardStory = Template.bind({});
 CardStory.args = {

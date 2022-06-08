@@ -3,7 +3,7 @@ import React from "react";
 import BookDetailTab from "./Index";
 
 export default {
-  title: "Organism/BookDetailTab",
+  title: "Organism/BooksTab",
   component: BookDetailTab,
 } as ComponentMeta<typeof BookDetailTab>;
 

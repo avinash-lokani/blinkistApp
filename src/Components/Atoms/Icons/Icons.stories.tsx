@@ -1,6 +1,6 @@
 import React from "react";
 import {ComponentMeta,ComponentStory} from '@storybook/react';
-import { DownArrowIcon, Productivity, SearchIcon } from "../../../Icons";
+import { DownArrowIcon, Productivity, SearchIcon } from "Icons";
 import Icons from "./Icons";
 
 export default{

@@ -1,5 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom';
 import Banner from '../../Molecules/Banner/index';
 import SearchBar from '../../Molecules/SearchBar/Index';
 import Footer from '../../Organisms/Footer/Index';
@@ -12,7 +13,7 @@ export default{
 } as ComponentMeta<typeof Entrepreneurship>;
 
 const Template: ComponentStory<typeof Entrepreneurship> = (args) => (
-    <Entrepreneurship {...args} />
+    <BrowserRouter><Entrepreneurship {...args} /> </BrowserRouter> 
 );
 
 export const EntrepreneurshipStory = Template.bind({});

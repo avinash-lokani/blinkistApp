@@ -1,10 +1,10 @@
 import { Box, Container, ThemeProvider, Typography } from "@mui/material";
-import BookData from "../../Data/BooksData";
-import React, { useEffect, useState } from "react";
-import theme from "../../Theme/Theme";
+import BookData from "Components/Data/BooksData";
+import React, { useState } from "react";
+import theme from "Components/Theme/Theme";
 import { makeStyles } from "@mui/styles";
-import CardGroup from "../../Organisms/CardGroup/Index";
-import axios from "axios";
+import CardGroup from "Components/Organisms/CardGroup/Index";
+
 
 interface Props {
   header: React.ReactNode;

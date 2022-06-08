@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import Tab from "@mui/material/Tab";
 import { Box } from "@mui/material";
 import { TabList, TabContext, TabPanel } from "@mui/lab";
-import Cards from "../Cards/Index";
+import Cards from "Components/Organisms/Cards/Index";
 import { makeStyles } from "@mui/styles";
 import axios from "axios";
-import URL from "../../Data/Url";
+import URL from "Components/Data/Url";
 
 const useStyles = makeStyles({
   textStyles: {

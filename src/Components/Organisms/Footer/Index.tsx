@@ -3,23 +3,25 @@ import { createTheme, ThemeProvider, Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles';
 import React from 'react';
 import Logo from "../../Atoms/Logo/Index";
-import Lists from '../../Molecules/Lists/Index';
+import Lists from '../../Molecules/FooterList/Index';
 
 const theme = createTheme({
     components: {
         MuiTypography:{
             styleOverrides: {
                 subtitle1: {
-                    color: "#0365F2",
                     fontSize: "24px",
                     fontWeight: "500",
+                    color: "#0365F2",
+                    
                     lineHeight: "32px",
                 },
                 caption: {
                     color: "#6D787E",
+                    
+                    lineHeight: "22px",
                     fontSize: "14px",
                     fontWeight: "500",
-                    lineHeight: "22px",
                 }
             }
         }
@@ -46,6 +48,9 @@ const useStyles = makeStyles({
       width: "100%",
       display: "flex",
       flexDirection: "column",
+     
+      justifyContent: "center",
+      alignItems: "center",
       height: "390px",
       gap: "48px",
       backgroundColor: "#F1F6F4",
@@ -53,17 +58,16 @@ const useStyles = makeStyles({
       left: 0,
       bottom: 0,
       right: 0,
-      justifyContent: "center",
-      alignItems: "center",
   });
   
   const SubContainer = styled("div")({
       width: "950px",
-      height: "224px",
-      gap: "32px",
       position: "relative",
       top: "38px",
       display: "flex",
+      height: "224px",
+      gap: "32px",
+      
       bottom: "108px",
     });
     
@@ -85,10 +89,11 @@ const useStyles = makeStyles({
     });
     
     const BelowContainer = styled("div")({
+        height: "22px",
+        position: "relative",
+        top: "20px",
       width: "546px",
-      height: "22px",
-      position: "relative",
-      top: "20px",
+     
       left: "0px",
     });
 

@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Buttons from "./Button"
-import { AddIcon, RightArrowIcon } from "../../../Icons";
+import { AddIcon, RightArrowIcon } from "Icons";
 
 
 const meta: ComponentMeta<typeof Buttons> = {
@@ -47,7 +47,7 @@ export const ConnectBtn = Template.bind({});
 ConnectBtn.args = {
     children : 'Connect',
     variant : 'contained',
-    style : {color : '#03314B' , backgroundColor : '#2CE080' , borderRadius : '4px' , width:'296px', height : '44px'}
+    style : {color : '#03314B'  , borderRadius : '4px' , width:'296px', height : '44px',background:"#2CE080"}
 }
 
 export default meta;

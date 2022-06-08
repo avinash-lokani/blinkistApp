@@ -25,19 +25,20 @@ const theme = createTheme({
            styleOverrides: {
              root: {
                "&.Mui-selected" : {
-                 color: "#03314B",
-                 borderBottom: "#2CE080",
-                 borderColor: "#2CE080",
+                borderBottom: "#2CE080",
+                borderColor: "#2CE080",
+                color: "#03314B",
+                
                },
                "&.MuiTab-root":{
                 borderBottom: "#2CE080",
                 borderColor: "#2CE080",
                },
-               textTransform: "none",
                fontWeight: "400",
                fontSize: "16px",
                lineHeight: "20.11px",
                color: "#2CE080",
+               textTransform: "none",
                fontFamily: "Cera Pro"
              },
            }
@@ -46,16 +47,18 @@ const theme = createTheme({
 })
 
 const useStyles = makeStyles({
-    textStyles: {
+    textFormat: {
+      lineHeight: "20px",
+      color: "#03314B",
         fontWeight: "400 !important",
         fontSize: "16px",
-        lineHeight: "20px",
-        color: "#03314B",
+
       },
-      tabHead: {
-        color: "#6D787E",
+      Head: {
         "&:focus": { color: "#03314B !important" },
         "&:active": { color: "#03314B !important" },
+        color: "#6D787E",
+       
       },
 });
 
@@ -104,34 +107,34 @@ function TabPanel(props: TabPanelProps) {
               aria-label="basic tabs example"
             >
               <Tab
-                className={classes.tabHead}
+                className={classes.Head}
                 label="Synopsis"
                 {...a11yProps(0)}
               />
               <Tab
-                className={classes.tabHead}
+                className={classes.Head}
                 label="Who is it for"
                 {...a11yProps(1)}
               />
               <Tab
-                className={classes.tabHead}
+                className={classes.Head}
                 label="About the author"
                 {...a11yProps(2)}
               />
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
-            <Typography variant="body2" className={classes.textStyles}>
+            <Typography variant="body2" className={classes.textFormat}>
               {props.synopsis}
             </Typography>
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <Typography variant="body2" className={classes.textStyles}>
+            <Typography variant="body2" className={classes.textFormat}>
               {props.aboutAuthor}
             </Typography>
           </TabPanel>
           <TabPanel value={value} index={2}>
-            <Typography variant="body2" className={classes.textStyles}>
+            <Typography variant="body2" className={classes.textFormat}>
               {props.forWhom}
             </Typography>
           </TabPanel>

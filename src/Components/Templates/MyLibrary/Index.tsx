@@ -1,8 +1,8 @@
 import { Box, Container, ThemeProvider, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React from "react";
-import Tabsbar from "../../Organisms/Tabs/Index";
-import theme from "../../Theme/Theme";
+import Tabsbar from "Components/Organisms/Tabs/Index";
+import theme from "Components/Theme/Theme";
 
 interface Props {
   header: React.ReactNode;

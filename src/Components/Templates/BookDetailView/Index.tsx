@@ -13,17 +13,18 @@ const useStyles = makeStyles({
     height : "100%"
   },
   footer : {
-    marginTop : "auto",
     height:"370px",
     position:"sticky",
     alignItems : "center",
+    marginTop : "auto",
+    
     width : "100%"
   },
   body :{
     
     display : "flex",
     flexDirection : "column",
-    minHeight : "100vh"
+    
   }
 })
 

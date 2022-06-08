@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React, { useEffect, useState } from "react";
-import Cards from "../Cards/Index"
+import Cards from "Components/Organisms/Cards/Index"
 
 interface Props {
     id : number;
@@ -21,23 +21,25 @@ interface Props {
 }
 
 
+const useStyles = makeStyles(
+  {
+      mainContainer: {
+          display : "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: "19.2px",
+      }
+  }
+)
+
 interface CardGroupProps {
     bookData: Array<Props>;
     title ?: string;
     type: string;
 }
 
-const useStyles = makeStyles(
-    {
-        container: {
-            display : "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexWrap: "wrap",
-            gap: "19.2px",
-        }
-    }
-)
+
 
 const CardGroup = (props : CardGroupProps) => {
 
@@ -64,10 +66,10 @@ const CardGroup = (props : CardGroupProps) => {
 
         console.log(displayBookDetails);
 
-      }, [props.bookData, props.type]);
+      }, [displayBookDetails, props.bookData, props.type]);
 
     return (
-        <Box className={classes.container}>
+        <Box className={classes.mainContainer}>
             {displayBookDetails.map((books,key) => {
                 return (
                     <Cards 
